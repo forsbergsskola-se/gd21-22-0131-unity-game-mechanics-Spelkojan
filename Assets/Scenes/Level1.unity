@@ -504,41 +504,6 @@ Transform:
   m_Father: {fileID: 1949826340}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &329979661 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2155400326160104086, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-  m_PrefabInstance: {fileID: 5304670518343803728}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &329979666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329979661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6d1eef9436a9473eb601c8539f18f82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onDeath:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: a6bdc8eac17feca4281b8c67d78e4e21, type: 2}
-        m_TargetAssemblyTypeName: GameEventSO, Assembly-CSharp
-        m_MethodName: InvokeGameEvent
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  maxHealth: 5
-  currentHealth: 0
-  healthBar: {fileID: 1790267453}
 --- !u!1001 &332073900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4373,14 +4338,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1449047790627654920, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1965644276597198475, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
+    - target: {fileID: 329979666, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1790267453}
     - target: {fileID: 2155400326160104080, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4425,57 +4386,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2155400326160104081, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: m_Simulated
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2155400326160104081, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2155400326160104086, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
       propertyPath: m_Name
       value: AirPlane_holder
-      objectReference: {fileID: 0}
-    - target: {fileID: 2155400326160104086, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2155400326160104087, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: speed
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2155400326160104087, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: rotationControl
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2155400326160104088, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2258517715316463538, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 3540806635435168847, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4380455656353272863, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4459498537006397376, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4995756830889057808, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7543494011484416364, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}

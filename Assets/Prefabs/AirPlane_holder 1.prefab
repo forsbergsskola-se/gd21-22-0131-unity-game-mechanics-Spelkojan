@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 2155400326160104087}
   - component: {fileID: 2155400326160104081}
   - component: {fileID: 2155400326160104088}
+  - component: {fileID: 329979666}
   m_Layer: 0
   m_Name: AirPlane_holder 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dc9afb95411d491893475066b1585cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 6
   acceleration: 3
   rotationControl: 2
   airPlaneBody: {fileID: 2155400326160104081}
@@ -85,7 +86,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.2580338, y: 0.34385931}
+  m_Offset: {x: 1.6515007, y: 0.57802397}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -96,8 +97,38 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 14.914366, y: 5.3406773}
+  m_Size: {x: 14.507118, y: 4.872348}
   m_EdgeRadius: 0
+--- !u!114 &329979666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2155400326160104086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d1eef9436a9473eb601c8539f18f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: a6bdc8eac17feca4281b8c67d78e4e21, type: 2}
+        m_TargetAssemblyTypeName: GameEventSO, Assembly-CSharp
+        m_MethodName: InvokeGameEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  maxHealth: 5
+  currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!1001 &3579520804206272216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105,13 +136,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2155400326160104080}
     m_Modifications:
+    - target: {fileID: 40105696672369303, guid: c6d29ce33e90c4216b958c4832e57aff, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 886735780099533080, guid: c6d29ce33e90c4216b958c4832e57aff, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 965883586565393095, guid: c6d29ce33e90c4216b958c4832e57aff, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2715967980687643600, guid: c6d29ce33e90c4216b958c4832e57aff, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2715967980687643600, guid: c6d29ce33e90c4216b958c4832e57aff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2715967980687643600, guid: c6d29ce33e90c4216b958c4832e57aff, type: 3}
       propertyPath: m_LocalPosition.y
@@ -149,9 +192,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3092385501769814099, guid: c6d29ce33e90c4216b958c4832e57aff, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3385263061509638506, guid: c6d29ce33e90c4216b958c4832e57aff, type: 3}
       propertyPath: m_Name
       value: Airplane
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385263061509638506, guid: c6d29ce33e90c4216b958c4832e57aff, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6413931685888751540, guid: c6d29ce33e90c4216b958c4832e57aff, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8428906074665009352, guid: c6d29ce33e90c4216b958c4832e57aff, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6d29ce33e90c4216b958c4832e57aff, type: 3}

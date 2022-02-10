@@ -10,6 +10,6 @@ public class SceneSwitch : MonoBehaviour
    private IEnumerator OnCollisionEnter2D(Collision2D col)
    {
       yield return new WaitForSeconds(SceneSwitchDelay);
-      SceneManager.LoadScene(2);
+      SceneManager.LoadScene(6);
    }
 }
