@@ -996,6 +996,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelSystems
       objectReference: {fileID: 0}
+    - target: {fileID: 4300668579912673748, guid: 5b1e6f511ff8a5b4ebb478b42cc0c2de, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4300668579912673749, guid: 5b1e6f511ff8a5b4ebb478b42cc0c2de, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2525,6 +2529,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aac1fc1b88e2da140834eabb9152bbee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1628728182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2155400326160104086, guid: 48f4d13d2be2745019b0d74d54c5c17d, type: 3}
+  m_PrefabInstance: {fileID: 5304670518343803728}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1668575516 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1088474276054150293, guid: 0ac112218ec744b7ba983cf1183a5ac6, type: 3}
@@ -2809,6 +2818,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1790267452}
+--- !u!1 &1891225737
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1891225739}
+  - component: {fileID: 1891225738}
+  m_Layer: 0
+  m_Name: Unity-RecorderBindings
+  m_TagString: EditorOnly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1891225738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891225737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24bc7e8573847adbdf1198360b3c794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_References:
+    m_Keys:
+    - 9502a863b6ad9465dbf85cb9f922bf77
+    m_Values:
+    - {fileID: 1628728182}
+--- !u!4 &1891225739
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1891225737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1905846202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1587140075179593061, guid: e2a106825153541a5bbf157f79ab7e39, type: 3}
